@@ -26,8 +26,4 @@ android {
 
 dependencies {
     implementation project(':FtcRobotController')
-    annotationProcessor files('lib/OpModeLookup.jar')
-
-    // This includes the dependencies defined in your root gradle file
-    implementation 'com.pedropathing:pedro-pathing:0.4.3'
 }
