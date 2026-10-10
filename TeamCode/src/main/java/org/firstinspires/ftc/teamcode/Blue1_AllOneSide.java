@@ -5,24 +5,19 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.pedropathing.api.PoseFactory;
 import com.pedropathing.math.Pose;
 import com.pedropathing.follower.Follower;
-import org.firstinspires.ftc.teamcode.pedro.Constants;
-import static com.pedropathing.api.Paths.*;
-import com.pedropathing.paths.Path;
+import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 @Autonomous
-public class TestAutonomous extends OpMode {
+public class Blue1_AllOneSide extends OpMode {
 
     @Override
     public void init() {
-
         Follower follower;
         final PoseFactory p = PoseFactory.degrees();
-        final Pose startPose = p.of(24, 24, 0);
-        final Pose park = p.of(48, 48, 90);
-        final Pose controlPose = p.of(36, 60, 45);
+        final Pose startPos = p.of(85, 133, 270);
 
         follower = Constants.create(hardwareMap);
 
-        follower.setPose(startPose);
+        follower.setPose(startPos);
     }
 
     @Override
